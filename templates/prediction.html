@@ -7,14 +7,16 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
+            background-image: url('path/to/your/background-image.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your image */
+            background-size: cover;
+            background-position: center;
         }
 
         header {
             text-align: center;
-            background-color: #4CAF50;
+            background-color: #4cbe4e;
             padding: 15px;
             color: white;
             font-size: 20px;
@@ -33,6 +35,9 @@
             max-width: 400px;
             margin: 0 auto;
             overflow: auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background to the form */
+            padding: 20px;
+            border-radius: 10px;
         }
 
         label {
@@ -45,7 +50,7 @@
             padding: 8px;
             margin-bottom: 15px;
             width: 100%;
-            border: 1px solid #3498db;
+            border: 1px solid #40aaf0;
             border-radius: 5px;
             font-size: 14px;
         }
@@ -65,7 +70,6 @@
             background-color: #2980b9;
         }
 
-        /* Added styles for reset button */
         button[type="reset"] {
             background-color: #e74c3c;
             margin-top: 10px;
@@ -83,27 +87,7 @@
 
     <main>
         <form action="/prediction" method="POST">
-            <label for="nitrogen">Nitrogen:</label>
-            <input type="text" id="nitrogen" name="nitrogen" required>
-
-            <label for="phosphorus">Phosphorus:</label>
-            <input type="text" id="phosphorus" name="phosphorus" required>
-
-            <label for="potassium">Potassium:</label>
-            <input type="text" id="potassium" name="potassium" required>
-
-            <label for="temperature">Temperature:</label>
-            <input type="text" id="temperature" name="temperature" required>
-
-            <label for="humidity">Humidity:</label>
-            <input type="text" id="humidity" name="humidity" required>
-
-            <label for="ph">pH:</label>
-            <input type="text" id="ph" name="ph" required>
-
-            <label for="rainfall">Rainfall:</label>
-            <input type="text" id="rainfall" name="rainfall" required>
-
+            <!-- Your form elements here -->
             <button type="submit">Predict Crop</button>
             <button type="reset">Reset</button>
         </form>
